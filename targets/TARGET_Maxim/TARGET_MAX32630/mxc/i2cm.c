@@ -78,19 +78,19 @@ static const uint32_t clk_div_table[3][8] = {
     /* I2CM_SPEED_100KHZ */
     {
         // 12000000
-        ((6 << MXC_F_I2CM_FS_CLK_DIV_FS_FILTER_CLK_DIV_POS) |
-            (17 << MXC_F_I2CM_FS_CLK_DIV_FS_SCL_HI_CNT_POS) |
-            (72 << MXC_F_I2CM_FS_CLK_DIV_FS_SCL_LO_CNT_POS)),
-        // 24000000
         ((12 << MXC_F_I2CM_FS_CLK_DIV_FS_FILTER_CLK_DIV_POS) |
-            (38 << MXC_F_I2CM_FS_CLK_DIV_FS_SCL_HI_CNT_POS) |
+            (34 << MXC_F_I2CM_FS_CLK_DIV_FS_SCL_HI_CNT_POS) |
             (144 << MXC_F_I2CM_FS_CLK_DIV_FS_SCL_LO_CNT_POS)),
+        // 24000000
+        ((24 << MXC_F_I2CM_FS_CLK_DIV_FS_FILTER_CLK_DIV_POS) |
+            (76 << MXC_F_I2CM_FS_CLK_DIV_FS_SCL_HI_CNT_POS) |
+            (288 << MXC_F_I2CM_FS_CLK_DIV_FS_SCL_LO_CNT_POS)),
         // 36000000 NOT SUPPORTED
         0,
         // 48000000
-        ((24 << MXC_F_I2CM_FS_CLK_DIV_FS_FILTER_CLK_DIV_POS) |
-            (80 << MXC_F_I2CM_FS_CLK_DIV_FS_SCL_HI_CNT_POS) |
-            (288 << MXC_F_I2CM_FS_CLK_DIV_FS_SCL_LO_CNT_POS)),
+        ((48 << MXC_F_I2CM_FS_CLK_DIV_FS_FILTER_CLK_DIV_POS) |
+            (160 << MXC_F_I2CM_FS_CLK_DIV_FS_SCL_HI_CNT_POS) |
+            (576 << MXC_F_I2CM_FS_CLK_DIV_FS_SCL_LO_CNT_POS)),
         // 60000000 NOT SUPPORTED
         0,
         // 72000000 NOT SUPPORTED
@@ -98,9 +98,9 @@ static const uint32_t clk_div_table[3][8] = {
         // 84000000 NOT SUPPORTED
         0,
         // 96000000
-        ((48 << MXC_F_I2CM_FS_CLK_DIV_FS_FILTER_CLK_DIV_POS) |
-            (164 << MXC_F_I2CM_FS_CLK_DIV_FS_SCL_HI_CNT_POS) |
-            (576 << MXC_F_I2CM_FS_CLK_DIV_FS_SCL_LO_CNT_POS)),
+        ((96 << MXC_F_I2CM_FS_CLK_DIV_FS_FILTER_CLK_DIV_POS) |
+            (328 << MXC_F_I2CM_FS_CLK_DIV_FS_SCL_HI_CNT_POS) |
+            (1152 << MXC_F_I2CM_FS_CLK_DIV_FS_SCL_LO_CNT_POS)),
     },
     /* I2CM_SPEED_400KHZ */
     {
